@@ -35,7 +35,7 @@ def string_format(text):
     text=text.lower()
     new = list(text)
     while (i < len(new)):
-        if (new[i] > 'z' or new[i] < 'A'):
+        if not((new[i] < 'z' and new[i] > 'A')or((new[i] < 'я' and new[i] > 'А'))):
             if i == 0:
                 del (new[i])
             elif i + 1 == len(new):
@@ -68,7 +68,7 @@ def handle_updates(updates):
         items = db.get_items(chat)
         if text == "/start":
             send_message(
-                "Welcome to your personal Word counter. Send any text to me and I'll parse words and store them as items.",
+                "Welcome to your personal Word counter. Send any text to me and I'll parse words and store them as items. All punctuation marks and symbols will be ignored",
                 chat)
         elif text == "/reset":
             db.deletetable()
