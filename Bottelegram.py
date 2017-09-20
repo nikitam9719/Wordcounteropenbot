@@ -74,6 +74,63 @@ def handle_updates(updates):
             db.deletetable()
             db.setup()
             send_message("Everything deleted", chat)
+        elif text=="/beoperator":
+            operators=db.get_operators(chat)
+            if str(chat) in operators:
+                send_message("You have already become an operator",
+                    chat)
+            else:
+                db.add_operator(chat)
+                send_message("Now you are operator, wait for your clients, you can stop this with /stopoperator command",
+                    chat)
+        elif text=="/findoperator":
+            operator=db.get_operator(chat)
+            if operator:
+                send_message(
+                    "You already have an operator",
+                    chat)
+                continue
+            freeoperator=db.get_freeoperator()
+            if freeoperator:
+                db.update_operator(freeoperator[0],chat)
+                send_message(
+                    "Now you have an operator, /killoperator will stop this if you want",
+                    chat)
+                send_message(
+                    "Now you have a client, /stopoperator will stop this if u want",
+                    freeoperator[0])
+            else:
+                send_message(
+                    "We dont have free operators now",
+                    chat)
+        elif text=="/clientwords":
+            client=db.get_client(chat)
+            if len(client)==0:
+                send_message("You dont have a client", chat)
+            else:
+                words=db.get_top5words(chat)
+                for word in words:
+                    count=db.get_countforitem(word)
+                    send_message("Client have used *" + word + "* " + str(count) + " times", chat)
+        elif text == "/killoperator":
+            operator=db.get_operator(chat)
+            if len(operator)==0:
+                send_message("You dont have an operator", chat)
+                continue
+            db.update_operator(operator[0],'')
+            send_message("Now you dont have an operator",chat)
+            send_message("You have been killed by your client",operator[0])
+        elif text == "/stopoperator":
+            operators=db.get_operators(chat)
+            if str(chat) not  in operators:
+                send_message("You are not an operator",
+                    chat)
+            else:
+                client = db.get_client(chat)
+                db.delete_operator(chat)
+                if len(client)!=0:
+                    send_message("Now you dont have an operator", client[0])
+                send_message("You have been killed by yourself",chat)
         elif text.startswith("/"):
             continue
         else:

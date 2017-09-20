@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053e0485-569e-41b5-b1e5-eed1d869125b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.sqlite" afterPath="$PROJECT_DIR$/todo.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bottelegram.py" afterPath="$PROJECT_DIR$/Bottelegram.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlconf.py" afterPath="$PROJECT_DIR$/sqlconf.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="Bottelegram.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bottelegram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="70" column="171" lean-forward="false" selection-start-line="70" selection-start-column="171" selection-end-line="70" selection-end-column="171" />
+            <state relative-caret-position="332">
+              <caret line="130" column="31" lean-forward="false" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -28,21 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sqlconf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sqlconf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="413">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="448" />
     <option name="y" value="27" />
     <option name="width" value="1400" />
@@ -91,7 +81,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -104,6 +93,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +150,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="448" y="27" width="1400" height="1000" extended-state="0" />
+    <frame x="448" y="27" width="1400" height="1000" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -191,29 +181,24 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Bottelegram.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Bottelegram.py</url>
           <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Bottelegram.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="11" />
+          <line>92</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="12" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="new[i]" language="Python" />
-        <watch expression="texts([text])" language="Python" />
+        <watch expression="operator[0]" language="Python" />
+        <watch expression="chat" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -228,11 +213,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sqlconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bottelegram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5270">
+          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bottelegram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -244,26 +271,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sqlconf.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_exec2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_vars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="355" column="0" lean-forward="false" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_comm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="1133" column="0" lean-forward="false" selection-start-line="1133" selection-start-column="0" selection-end-line="1133" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bottelegram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="70" column="171" lean-forward="false" selection-start-line="70" selection-start-column="171" selection-end-line="70" selection-end-column="171" />
+        <state relative-caret-position="332">
+          <caret line="130" column="31" lean-forward="false" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
